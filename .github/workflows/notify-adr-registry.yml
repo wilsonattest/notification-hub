@@ -1,0 +1,19 @@
+name: Notify ADR Registry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/adr/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger ADR Registry rebuild
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.ADR_REGISTRY_TOKEN }}
+          repository: wilsonattest/adr-registry
+          event-type: adr-updated
+          client-payload: '{"repo": "${{ github.repository }}"}'
