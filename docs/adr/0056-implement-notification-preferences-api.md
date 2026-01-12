@@ -6,7 +6,7 @@
 |-------|-------|
 | Date | 2026-01-12 |
 | Status | Proposed |
-| Deciders | Alex Rivera, Kim Patel |
+| Deciders | Alex Rivera |
 
 ## Context
 
