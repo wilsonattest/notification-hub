@@ -4,7 +4,7 @@
 
 | Field | Value |
 |-------|-------|
-| Date | 2026-01-11 |
+| Date | 2026-01-12 |
 | Status | Proposed |
 | Deciders | Sarah Chen, Marcus Johnson |
 
