@@ -5,10 +5,10 @@ on:
     branches: [main]
     paths:
       - 'docs/adr/**'
-    pull_request:
-      types: [opened, synchronize, reopened, closed]
-      paths:
-        - 'docs/adr/**'
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    paths:
+      - 'docs/adr/**'
 
 jobs:
   notify:
